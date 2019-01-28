@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.bbianchi.view.ViewTest" time="0.056" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.bbianchi.view.ViewTest" time="0.062" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-10-openjdk/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/ben/Development/interviews/config-parser"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ben/Development/interview/config-parser/config-parser"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/ben/Development/interviews/config-parser"/>
+    <property name="user.dir" value="/home/ben/Development/interview/config-parser/config-parser"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
@@ -33,7 +33,7 @@
     <property name="java.class.version" value="54.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.14.81-1-lts"/>
+    <property name="os.version" value="4.18.12-arch1-1-ARCH"/>
     <property name="library.jansi.path" value="/opt/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/ben"/>
     <property name="user.timezone" value="America/New_York"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="/opt/maven/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.home" value="/usr/lib/jvm/java-10-openjdk"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -62,8 +62,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.bbianchi.view.ViewTest" name="viewHasIdentifierField" time="0.051"/>
+  <testcase classname="com.bbianchi.view.ViewTest" name="viewHasIdentifierField" time="0.048"/>
   <testcase classname="com.bbianchi.view.ViewTest" name="viewHasClassNameField" time="0.001"/>
   <testcase classname="com.bbianchi.view.ViewTest" name="viewHasSubViews" time="0.002"/>
   <testcase classname="com.bbianchi.view.ViewTest" name="viewHasClassField" time="0.002"/>
+  <testcase classname="com.bbianchi.view.ViewTest" name="canSerializeFixture" time="0.009"/>
 </testsuite>

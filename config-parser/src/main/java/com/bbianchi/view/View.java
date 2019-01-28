@@ -13,7 +13,7 @@ public class View implements Serializable {
     private String identifier= "";
 
     @JsonProperty("class")
-    private String classField = "";
+    private String elementClass = "";
 
     @JsonProperty("classNames")
     private List<String> classNames;
@@ -31,11 +31,11 @@ public class View implements Serializable {
     }
 
     public String getClassField() {
-        return this.classField;
+        return this.elementClass;
     }
 
     public void setClassField(String newClassField) {
-        this.classField = newClassField;
+        this.elementClass = newClassField;
     }
     
     public List<String> getClassNames() {

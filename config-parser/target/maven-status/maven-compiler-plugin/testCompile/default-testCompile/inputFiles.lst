@@ -1,2 +1,5 @@
-/home/ben/Development/interviews/config-parser/src/test/java/com/bbianchi/view/ViewTest.java
-/home/ben/Development/interviews/config-parser/src/test/java/com/bbianchi/AppTest.java
+/home/ben/Development/interview/config-parser/config-parser/src/test/java/com/bbianchi/view/ViewTest.java
+/home/ben/Development/interview/config-parser/config-parser/src/test/java/com/bbianchi/selector/IdentifierSelectorTest.java
+/home/ben/Development/interview/config-parser/config-parser/src/test/java/com/bbianchi/selector/ClassSelectorTest.java
+/home/ben/Development/interview/config-parser/config-parser/src/test/java/com/bbianchi/selector/ClassNameSelectorTest.java
+/home/ben/Development/interview/config-parser/config-parser/src/test/java/com/bbianchi/AppTest.java
