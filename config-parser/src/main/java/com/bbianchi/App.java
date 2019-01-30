@@ -1,6 +1,7 @@
 package com.bbianchi;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -61,20 +62,20 @@ public class App
         }
     }
 
-    static View readViewFromFile(String filePath) {
+    static View readViewFromFile(String filePath) throws IOException {
 
         View viewFromFile = null;
 
         if (filePath == null || filePath.isEmpty()) {
-            System.err.println("File Not   Found");
-            return null;
+            System.err.println("File Not Found");
+            throw new FileNotFoundException(filePath);
         }
 
         try {
             viewFromFile = new ObjectMapper().readValue(new File(filePath), View.class);
         } catch (IOException exception) {
             System.err.println("Unable to Read File. " + filePath);
-            System.exit(APPLICATION_FAILURE_CODE);
+            throw exception;
         }
 
         return viewFromFile;
