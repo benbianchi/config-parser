@@ -34,4 +34,14 @@ public class IdentifierSelectorTest {
         assertTrue(selector.apply("identity", view));
         assertFalse(selector.apply("Alias", view));
     }
+
+    @Test
+    public void testValidRegex() {
+        View view = new View(); 
+        view.setIdentifier("identity");
+
+        assertNotNull(selector.extract("#identity"));
+        assertNull(selector.extract("identity"));
+        
+    }
 }

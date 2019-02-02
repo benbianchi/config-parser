@@ -46,7 +46,8 @@ public class ViewTest {
         String viewAsString = "{\"identifier\":\"me\", \"class\":\"StackView\", \"classNames\":[\"container\"]}";
         View view = (View) deserialize(viewAsString, View.class);
 
-        assertEquals(view.getClassNames().get(0).equals("container"), true);
+        assertEquals(view.getClassNames().contains("container"), true);
+
     }
 
     @Test
@@ -60,7 +61,7 @@ public class ViewTest {
         assertEquals(view.getSubviews().size(), 1);
 
         assertEquals(view.getSubviews().get(0).getClassField().equals("ChildStackView"), true);
-        assertEquals(view.getSubviews().get(0).getClassNames().get(0).equals("child"), true);
+        assertEquals(view.getSubviews().get(0).getClassNames().contains("child"), true);
         assertEquals(view.getSubviews().get(0).getIdentifier().equals("childIdentifier"), true);
     }
 

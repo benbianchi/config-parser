@@ -1,3 +1,10 @@
+# Built Fiels
 *target/*
 
 *.class
+
+# Editor
+.vscode/
+*.iml
+.idea/
+dependency-reduced-pom.xml

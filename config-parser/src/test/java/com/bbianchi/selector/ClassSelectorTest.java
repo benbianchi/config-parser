@@ -34,4 +34,13 @@ public class ClassSelectorTest {
         assertTrue(selector.apply("StackView", view));
         assertFalse(selector.apply("Input", view));
     }
+    
+    @Test
+    public void testExtraction() {
+        View view = new View();
+        view.setClassField("StackView");
+        
+        assertEquals(selector.extract("StackView#id.class"), "StackView");
+        assertFalse(selector.apply("Input", view));
+    }
 }
