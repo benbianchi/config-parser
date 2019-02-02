@@ -22,5 +22,10 @@ java -jar target/config-parser-1.0-SNAPSHOT.jar
 ### Querying
 
 `.` = className
+
+
 `#` = identifer
+
+
 And keep you class first if you want to select by `Class` (Not ClassName)
+
